@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ecb60890af.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
     <title>Portfolio Jose Farias</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div id="container">
+      <div id="navigationBar">
+        <nav>
+          <div>
+            <i class="fa-solid fa-shop" style="color: #030abc"></i>
+          </div>
+          <div>
+            <label
+              ><input
+                type="text"
+                placeholder="Search products, brands and more..." /><i
+                class="fa-solid fa-magnifying-glass"
+                style="color: #030abc"
+              ></i
+            ></label>
+          </div>
+          <div>
+            <i
+              class="fa-solid fa-cart-shopping fa-xs"
+              style="color: #030abc"
+            ></i>
+          </div>
+          <ul>
+            <li>Home</li>
+            <li>Category</li>
+            <li>!Offer</li>
+            <li>Help!</li>
+          </ul>
+        </nav>
+      </div>
+      <div id="content">
+        <div class="main-img"></div>
+        <div class="info-widget">
+          <ul>
+            <li class="credit">
+              <i class="fa-solid fa-credit-card" style="color: #030abc"></i>
+              <p></p>
+            </li>
+            <li class="security">
+              <i class="fa-solid fa-shield-check" style="color: #030abc"></i>
+              <p></p>
+            </li>
+            <li class="delivery">
+              <i class="fa-solid fa-truck" style="color: #030abc"></i>
+              <p></p>
+            </li>
+          </ul>
+        </div>
+        <div class="products">
+          <header>
+            <p>Offers</p>
+          </header>
+          <div class="product1">
+            <img src="img/Televisor.png" alt="TV" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="product2">
+            <img src="img/Maleta.png" alt="Suitcase" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="product3">
+            <img src="img/Cafetera.png" alt="Coffe Machine" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="product4">
+            <img src="img/Hidrolavadora.png" alt="Pressure washer" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="categories">
+          <header>
+            <p>Popular Categories</p>
+          </header>
+          <div class="category">
+            <div class="home">
+              <i class="fa-solid fa-house" style="color: #030abc"></i>
+              <p>Home</p>
+            </div>
+            <div class="clothes">
+              <i class="fa-solid fa-shirt" style="color: #030abc"></i>
+              <p>Clothes</p>
+            </div>
+            <div class="tecno">
+              <i class="fa-solid fa-tv" style="color: #030abc"></i>
+              <p>Tecno</p>
+            </div>
+            <div class="car-accessory">
+              <i class="fa-solid fa-car" style="color: #030abc"></i>
+              <p>Accessory and others</p>
+            </div>
+            <div class="sport">
+              <i class="fa-solid fa-basketball" style="color: #030abc"></i>
+              <p>Sport</p>
+            </div>
+            <div class="console">
+                <i class="fa-solid fa-gamepad" style="color: #030abc"></i>
+                <p>Games</p>
+            </div>
+            <div class="tools">
+                <i class="fa-solid fa-screwdriver-wrench" style="color: #030abc;"></i>
+                <p>Tools</p>
+            </div>
+            <div class="pets">
+                <i class="fa-solid fa-paw" style="color: #030abc;"></i>
+                <p>Pets Accessory</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="contact">
+        <h2>Contact</h2>
+        <h3>Send me your doubts</h3>
+        <form action="#">
+            <div class="itemform">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" minlength="2" maxlength="64" size="32" required>
+
+            </div>
+            <div class="itemform">
+                <label for="company">Company</label>
+                <input type="text" name="coompany" id="company" minlength="2" maxlength="64" size="32">
+            </div>
+            <div class="itemform">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" minlength="2" maxlength="128" size="32" required>
+            </div>
+            <div class="itemform">
+                <label for="message">Message</label>
+                <textarea name="messase" id="message" cols="33" rows="5"></textarea>
+            </div>
+            <div class="itemform">
+                <input type="button" name="send" value="CONTACT">
+            </div>
+        </form>
+      </section>
+      <div id="footer">
+        <footer>
+            <i class="fa-solid fa-shop" style="color: #030abc"></i>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
