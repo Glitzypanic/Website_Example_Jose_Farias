@@ -1,156 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/ecb60890af.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Portfolio Jose Farias</title>
-  </head>
-  <body>
-    <div id="container">
-      <div id="navigationBar">
-        <nav>
-          <div>
-            <i class="fa-solid fa-shop" style="color: #030abc"></i>
-          </div>
-          <div>
-            <label
-              ><input
-                type="text"
-                placeholder="Search products, brands and more..." /><i
-                class="fa-solid fa-magnifying-glass"
-                style="color: #030abc"
-              ></i
-            ></label>
-          </div>
-          <div>
-            <i
-              class="fa-solid fa-cart-shopping fa-xs"
-              style="color: #030abc"
-            ></i>
-          </div>
-          <ul>
-            <li>Home</li>
-            <li>Category</li>
-            <li>!Offer</li>
-            <li>Help!</li>
-          </ul>
-        </nav>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/ecb60890af.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Portfolio Jose Farias</title>
+</head>
+
+<body>
+  <!-- Container -->
+  <div id="container">
+    <!-- Navigation Bar -->
+    <div class="header" id="header-link">
+      <nav>
+        <div class="logo-bar">
+          <i class="fa-solid fa-shop fa-2xl" style="color: #030AbC"></i>
+          <h4>Market</h4>
+        </div>
+        <ul class="list">
+          <li class="home"><a href="#header-link">Home</a></li>
+          <li class="home"><a href="#category-link">Category</a></li>
+          <li class="home"><a href="#offers-link">!Offer</a></li>
+          <li class="home"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="search-bar">
+          <label>
+            <input type="text" placeholder="Search products, brands and more..." />
+          </label>
+          <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #030abc"></i>
+        </div>
+        <div class="location">
+          <i class="fa-solid fa-location-dot fa-xl" style="color: #030abc;"></i>
+          <p>Location </p>
+        </div>
+        <div class="logo-carrito">
+          <i class="fa-solid fa-cart-shopping fa-xl" style="color: #030abc"></i>
+        </div>
+      </nav>
+    </div>
+    <div class="main">
+      <!-- Contenido principal -->
       <div id="content">
-        <div class="main-img"></div>
+        <div class="main-img">
+          <img src="img/Main-flayer.png" alt="Flayer" />
+        </div>
         <div class="info-widget">
           <ul>
             <li class="credit">
-              <i class="fa-solid fa-credit-card" style="color: #030abc"></i>
-              <p></p>
+              <i class="fa-solid fa-credit-card fa-2xl" style="color: #030abc"></i>
+              <h4>Easy Payment</h4>
+              <p>Up to 48 Months.</p>
             </li>
             <li class="security">
-              <i class="fa-solid fa-shield-check" style="color: #030abc"></i>
-              <p></p>
+              <i class="fa-solid fa-shield fa-2xl" style="color: #030abc"></i>
+              <h4>Free 2-year Warranty</h4>
+              <p>Buy with confidence.</p>
             </li>
             <li class="delivery">
-              <i class="fa-solid fa-truck" style="color: #030abc"></i>
-              <p></p>
+              <i class="fa-solid fa-truck fa-2xl" style="color: #030abc"></i>
+              <h4>Free Shipping</h4>
+              <p>Even on the small stuff.</p>
             </li>
           </ul>
         </div>
+        <!-- Productos -->
+        <div class="offers" id="offers-link">
+          <h2>Offers</h2>
+        </div>
         <div class="products">
-          <header>
-            <p>Offers</p>
-          </header>
           <div class="product1">
             <img src="img/Televisor.png" alt="TV" />
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="price">$150.000 <span>35% OFF</span></p>
+            <p class="month">5x $30.000 without interest</p>
+            <p class="shipping">Free Shipping</p>
           </div>
           <div class="product2">
             <img src="img/Maleta.png" alt="Suitcase" />
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="price">$50.000 <span>35% OFF</span></p>
+            <p class="month">2x $25.000 without interest</p>
+            <p class="shipping">Free Shipping</p>
           </div>
           <div class="product3">
-            <img src="img/Cafetera.png" alt="Coffe Machine" />
-            <p>Lorem ipsum dolor sit amet.</p>
+            <img src="img/Coffee-maker.png" alt="Coffe Machine" />
+            <p class="price">200.000 <span>35% OFF</span></p>
+            <p class="month">5x $40.000 without interest</p>
+            <p class="shipping">Free Shipping</p>
           </div>
           <div class="product4">
             <img src="img/Hidrolavadora.png" alt="Pressure washer" />
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p class="price">$400.000 <span>35% OFF</span></p>
+            <p class="month">5x $80.000 without interest</p>
+            <p class="shipping">Free Shipping</p>
           </div>
         </div>
+        <!-- Media -->
+        <div id="media">
+          <div class="description">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+              laboriosam tempore, non odio aliquam quam nihil eveniet deleniti
+              placeat vero expedita aut recusandae. Sit ipsum laborum dolorum
+              recusandae eveniet veritatis laboriosam similique eos
+              repellendus praesentium voluptate, distinctio, quisquam magnam,
+              exercitationem ut esse? Voluptatibus beatae, quam voluptates
+              officiis exercitationem tempora, modi nesciunt amet, facere
+              nulla velit rerum illum deleniti a fuga!
+            </p>
+          </div>
+          <div class="video">
+            <video controls width="480">
+              <source src="media/videoplayback.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <!-- Categorias -->
+        <div class="category-title" id="category-link">
+          <h2>Categories</h2>
+        </div>
         <div class="categories">
-          <header>
-            <p>Popular Categories</p>
-          </header>
-          <div class="category">
-            <div class="home">
-              <i class="fa-solid fa-house" style="color: #030abc"></i>
-              <p>Home</p>
-            </div>
-            <div class="clothes">
-              <i class="fa-solid fa-shirt" style="color: #030abc"></i>
-              <p>Clothes</p>
-            </div>
-            <div class="tecno">
-              <i class="fa-solid fa-tv" style="color: #030abc"></i>
-              <p>Tecno</p>
-            </div>
-            <div class="car-accessory">
-              <i class="fa-solid fa-car" style="color: #030abc"></i>
-              <p>Accessory and others</p>
-            </div>
-            <div class="sport">
-              <i class="fa-solid fa-basketball" style="color: #030abc"></i>
-              <p>Sport</p>
-            </div>
-            <div class="console">
-                <i class="fa-solid fa-gamepad" style="color: #030abc"></i>
-                <p>Games</p>
-            </div>
-            <div class="tools">
-                <i class="fa-solid fa-screwdriver-wrench" style="color: #030abc;"></i>
-                <p>Tools</p>
-            </div>
-            <div class="pets">
-                <i class="fa-solid fa-paw" style="color: #030abc;"></i>
-                <p>Pets Accessory</p>
-            </div>
+          <div class="home. category">
+            <i class="fa-solid fa-house" style="color: #030abc"></i>
+            <p>Home</p>
+          </div>
+          <div class="clothes category">
+            <i class="fa-solid fa-shirt" style="color: #030abc"></i>
+            <p>Clothes</p>
+          </div>
+          <div class="tecno category">
+            <i class="fa-solid fa-tv" style="color: #030abc"></i>
+            <p>Tecno</p>
+          </div>
+          <div class="car-accessory category">
+            <i class="fa-solid fa-car" style="color: #030abc"></i>
+            <p>Accessory and others</p>
+          </div>
+          <div class="sport category">
+            <i class="fa-solid fa-basketball" style="color: #030abc"></i>
+            <p>Sport</p>
+          </div>
+          <div class="console category">
+            <i class="fa-solid fa-gamepad" style="color: #030abc"></i>
+            <p>Games</p>
+          </div>
+          <div class="tools category">
+            <i class="fa-solid fa-screwdriver-wrench" style="color: #030abc"></i>
+            <p>Tools</p>
+          </div>
+          <div class="pets category">
+            <i class="fa-solid fa-paw" style="color: #030abc"></i>
+            <p>Pets Accessory</p>
           </div>
         </div>
       </div>
+      <!-- Seccion de Contacto -->
       <section id="contact">
         <h2>Contact</h2>
         <h3>Send me your doubts</h3>
         <form action="#">
-            <div class="itemform">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" minlength="2" maxlength="64" size="32" required>
-
-            </div>
-            <div class="itemform">
-                <label for="company">Company</label>
-                <input type="text" name="coompany" id="company" minlength="2" maxlength="64" size="32">
-            </div>
-            <div class="itemform">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" minlength="2" maxlength="128" size="32" required>
-            </div>
-            <div class="itemform">
-                <label for="message">Message</label>
-                <textarea name="messase" id="message" cols="33" rows="5"></textarea>
-            </div>
-            <div class="itemform">
-                <input type="button" name="send" value="CONTACT">
-            </div>
+          <div class="itemform">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" minlength="2" maxlength="64" size="32" required />
+          </div>
+          <div class="itemform">
+            <label for="company">Company</label>
+            <input type="text" name="coompany" id="company" minlength="2" maxlength="64" size="32" />
+          </div>
+          <div class="itemform">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" minlength="2" maxlength="128" size="32" required />
+          </div>
+          <div class="itemform">
+            <label for="message">Message</label>
+            <textarea name="messase" id="message" cols="33" rows="5"></textarea>
+          </div>
+          <div class="itemform">
+            <input type="submit" name="send" value="CONTACT" />
+          </div>
         </form>
       </section>
-      <div id="footer">
-        <footer>
-            <i class="fa-solid fa-shop" style="color: #030abc"></i>
-        </footer>
-      </div>
     </div>
-  </body>
+    <!-- Footer -->
+    <div id="footer">
+      <footer>
+        <i class="fa-solid fa-shop fa-xl" style="color: #F26363"></i>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus accusamus esse suscipit itaque. Autem
+          eum eligendi odio harum modi, eveniet magni quia nisi voluptatibus delectus, temporibus itaque animi incidunt
+          quidem.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+
 </html>
